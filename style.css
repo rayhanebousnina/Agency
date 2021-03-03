@@ -1,104 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-*{
-    margin: 0;
-    font-family: 'Staatliches', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .cover {
-    background-image: url(images/home.jpg);   
-    background-size: cover;
-    height: 40rem;
+  background-image: url(images/home.jpg);
+  background-size: cover;
+  height: 40rem;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;    
-    margin-right: 1rem;
-    padding-top: 2rem;
-    
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  padding-top: 2rem;
 }
 li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-    color: black; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  color: black;
+  position: relative;
 }
-li::after {
 
-}
 li:hover {
-    
-    color: rgb(78, 200, 236);
+  transform: scaleY(1.5);
 }
-
+li a {
+  text-decoration: none;
+  color: black;
+}
 .search-area {
-    margin: 8rem;
-    padding-top: 2rem;
-    border-radius: 0.5rem;
-    background-color: rgba(7, 7, 6, 0.699);
-    height: 10rem;
-    display: grid;
-    justify-content: center;
+  margin: 8rem;
+  padding-top: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(7, 7, 6, 0.699);
+  height: 10rem;
+  display: grid;
+  justify-content: center;
 }
 .welcome {
-    color: wheat;
-    font-size: 3rem;
+  color: white;
+  font-size: 3rem;
 }
 .gallery {
-    background-color: rgba(0, 0, 0, 0.849);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
+  background-color: rgba(0, 0, 0, 0.849);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
 }
-.inter-section { 
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+.inter-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(images/sigmund-QnitL3_yNHg-unsplash.jpg);
-    background-size: cover;
-    height: 20rem;
-    display: grid;
-    justify-content: space-around;
-    align-content: center;
+  background-size: cover;
+  height: 20rem;
+  display: grid;
+  justify-content: space-around;
+  align-content: center;
 }
 .btn {
-    padding: 1rem;
-    margin: auto;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    color: wheat;
-    background-color: rgba(0, 0, 0, 0.904);  
+  padding: 1rem;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.904);
 }
 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-h2 {
-    text-align: center;
-    color: wheat;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .best {
-    background-color:  rgba(0, 0, 0, 0.849);
-    padding: 2rem;
+  background-color: #202020;
+  padding: 2rem;
 }
 /* Cards */
 .cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 0.5rem;
+}
+.container {
+  margin-bottom: 2rem;
+  padding: 2px 16px;
+  background-color: rgba(255, 255, 255, 0.76);
+  color: black;
+  border-radius: 0.5rem;
+}
+.card img {
+  border-radius: 0.5rem;
+}
+.card img:hover {
+  opacity: 70%;
+}
+
+/* sponsors*/
+
+.sponsors {
+  background-color: white;  
+  background-size: cover;
+  height: 20rem;
+  padding: 2rem;
+}
+div.sponsors h1 {
+    color: black;
+}
+
+/* partners */
+.partner {
     display: flex;
     justify-content: space-around;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 25%;
-}
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.footer {
+    padding: 9rem;
+    background-color: #202020;
+    height: 12rem;
+    
 }
-
-.container {
-    padding: 2px 16px;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+h3 {
+    color: white;
+}
+.footer hr {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(116, 113, 113, 0.212);
 }

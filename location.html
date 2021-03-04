@@ -4,65 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Rayhane Agency</title>
   </head>
   <body>
     <!--My cover-->
     <div class="cover">
-      <div class="navbar">
+      <div class="navbar">        
         <ul>
+          <div class="logo"><img id="logo-nav" src="images/house-key.png" alt="" /></div>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="vente.html">J'achète</a></li>
           <li><a href="location.html">Je loue</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+      <hr />
       <div class="search-area">
-        <div class="welcome">Bienvenue chez Rayhane Agency</div>
-        <div class="form"></div>
+        <div class="welcome"><center>Locations</center></div>
+        <div class="form">
+          <form>
+            <select id="region" name="region">
+            <option value=""> Tunis</option>
+            <option value=""> Hammamet</option>
+            <option value=""> Nabeul</option>
+            <option value=""> Sousse</option>
+            <option value=""> Monastir</option>
+            <option value=""> Sfax</option>
+            </select>            
+          </form>
+          <form>
+            <select id="typebien" name="typebien">
+            <option value="v"> Maison</option>
+            <option value="l"> Appartement</option>
+            <option value="l"> villa</option>
+            </select>            
+          </form>            
+          <form>
+            <select id="budget" name="budget" style="width: fit-content;">
+            <option value="v"> 2 000dt - 4 000dt</option>
+            <option value="l"> 4 000dt - 6 000dt</option>
+            <option value="l"> 6 000dt - 10 000dt</option>
+            <option value="l"> Supérieur à 10 000dt </option>
+            </select>            
+          </form>        
+          <button id="search">Chercher</button>
+        </div>
       </div>
     </div>
     <!--./My cover-->
 
     <!--Meilleurs ventes et locations-->
-    <div class="best">
-      <h2>Meilleurs ventes et locations</h2>
+    <div class="vente">
+      <h1>Meilleurs locations</h1>
 
       <div class="cards-container">
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/nabeul.jpg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>750 000dt</b></h4>
+            <p>Maison d'hôte, Nabeul</p>
           </div>
         </div>
 
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/maison-dhotes.jpg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>700 000dt</b></h4>
+            <p>Villa, Sousse</p>
           </div>
         </div>
 
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/amine-cherif-u0Ih2wfldLA-unsplash.jpg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>800 000dt</b></h4>
+            <p>Appartement, Hammamet</p>
           </div>
         </div>
       </div>
@@ -70,41 +100,117 @@
       <div class="cards-container">
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/images (1).jpeg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>750 000dt</b></h4>
+            <p>Maison d'hôte, Nabeul</p>
           </div>
         </div>
 
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/b1eafb6f6cf1b8fe12a04256b889ebc7.jpg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>700 000dt</b></h4>
+            <p>Villa, Sousse</p>
           </div>
         </div>
 
         <div class="card">
           <img
-            src="images/james-erasmus-bIDCiCLZn9s-unsplash (1).jpg"
+            src="images/villes/tunis.jpg"
             alt="Avatar"
             style="width: 100%"
           />
           <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>800 000dt</b></h4>
+            <p>Appartement, Hammamet</p>
           </div>
         </div>
+      </div>
+
+      <div class="cards-container" style="padding-bottom: 3rem;">
+        <div class="card">
+          <img
+            src="images/villes/download.jpeg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>950 000dt</b></h4>
+            <p>Villa, Monastir</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/villes/download1.jpeg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>680 000dt</b></h4>
+            <p>Villa, Nabeul</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/villes/download3.jpeg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>670 000dt</b></h4>
+            <p>Appartement, Jerba</p>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
       </div>
     </div>
     <!--./Meilleurs ventes et locations-->
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="logo"><img id="logo" src="images/house-key2.png" alt="" /></div>
+        <div class="adress">
+          <h3>Adresse</h3>
+          <div><i class="fas fa-phone-square-alt fa-2x"></i>+216 25 668 741</div> <br>
+          <div>
+            <i class="fas fa-map-marker-alt fa-2x"></i>Centre commercial L’Esplanade,<br />
+            Bureau n° 21, avenue Habib Bourguiba, <br />
+            La Marsa Plage, Tunis, Tunisie.
+          </div>
+        </div>
+        <div class="social">
+          <h3>Rejoingez-nous</h3>
+          <div class="fa-insta">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <div><input type="text" placeholder=" Mail Adress"/><button>S'abonner</button></div>
+        </div>        
+      </div>    
+    </div>
+    <!--./Footer-->
   </body>
 </html>
